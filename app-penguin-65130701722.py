@@ -25,7 +25,7 @@ culmen_length_input = st.slider('Enter culmen length:', 0, 50, 37)
 culmen_depth_input = st.slider('Enter culmen depth in mm (0 to 50):',0, 50, 25)
 flipper_length_input = st.slider('Enter flipper length in mm (0 to 200):',0, 200, 100)
 body_mass_input = st.slider('Enter body mass in g (1000 to 5000):', 1000, 5000,2500)
-sex_input = st.Checkbutton('Select sex:', ['MALE', 'FEMALE'])
+sex_input = st.selectbox('Select sex:', ['MALE', 'FEMALE'])
 
 # Create a DataFrame with user input
 x_new = pd.DataFrame({
